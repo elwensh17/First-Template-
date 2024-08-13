@@ -1,0 +1,128 @@
+/* General Styles */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 97%;
+    min-width: 270px;
+    margin: auto;
+}
+
+/* navbar Style */
+nav {
+    padding: 21px;
+    box-shadow: 0px 0px 3px #ddd;
+}
+h1,
+.links, .links li {
+    display: inline-block;
+}
+
+nav h1 {
+    width: 25%;
+}
+
+.links {
+    width: 74%;
+}
+
+.links li {
+    width: 24%;
+    text-align: center;
+}
+
+.links li a {
+    text-decoration: none;
+    font-family:"segoe ui light";
+}
+/* end navbar style */
+
+/* main style */
+main {
+    min-height: 150vh;
+    margin-top: 49px;
+}
+section,
+aside {
+    min-width: 270px;
+    margin: 21px 7px;
+    float: left;
+    border: 1px solid #080;
+}
+
+aside {
+    width: 24%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+aside h2 {
+    padding: 21px 0;
+    text-align: center;
+    color: #3973fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside p {
+    padding: 7px 21px;
+    font-size: 21px;
+    font-weight: 100;
+    /* text-align: center; */
+    text-transform: capitalize;
+}
+section{
+    width: 73%;
+}
+
+.card {
+    display: inline-block;
+    width: 22%;
+    margin: 7px;
+    border: 1px solid #ddd;
+
+}
+
+.card .card-body {
+    padding: 21px;
+}
+
+.card-body h3 {
+    padding: 14px 0;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card button {
+    display: block;
+    width: 170px; 
+    margin: auto;
+    padding: 9px;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 400ms ease;
+    border: 1px solid #3973fa;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #3973fa;
+    color:white;
+}
+section::after {
+    content: "";
+    clear: both;
+}
+/* footer style */
+footer {
+    padding: 21px;
+    text-align: center;
+    background-color: #333;
+    color: #FFF;
+}
